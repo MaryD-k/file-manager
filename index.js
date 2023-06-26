@@ -59,6 +59,9 @@ rl.on('line', async (line) => {
         case 'decompress':
           await decompressHandler(command.parameters[0], command.parameters[1]);
           break;
+        case '.exit':
+          rl.close();
+          break;
         default: console.log('Command not exist');
       }
     }
