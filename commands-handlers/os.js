@@ -4,7 +4,7 @@ export async function osHandler(param) {
   try {
     switch(param) {
       case '--EOL':
-        console.log(EOL);
+        console.log(JSON.stringify(EOL));
         break;
 
       case '--cpus':
